@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+     
+        <title>Biggest Shitcoin $BSC Rewards Dashboard</title>
+  <link rel="icon" href="fav.png">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+       
+
+	   <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body >
+      
+        <!-- Masthead-->
+        <header class="masthead" >
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-5">
+                        <div class="text-center text-white">
+                            <!-- Page heading-->
+                           
+                           <img src="toplogo-s.png"  />
+                            <h1 class="mb-5">Biggest Shitcoin $BSC Rewards Dashboard</h1>
+                       
+                                <div class="row">
+                                    <div class="col">
+                                        <input class="form-control form-control-md" id="walletaddress" placeholder="Wallet Address" />
+      
+                                    </div>
+                                    <div class="col-auto">
+                                        
+                                        <input  class="btn btn-warning btn-md" id="LoadInfo" type="button" style="cursor: pointer; margin:0px !important" onClick="" value="Check" />
+                                    
+                                    </div>
+                                </div>
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Icons Grid-->
+        <section id="resultsdiv" class="features-icons text-center"  >
+
+
+            <div class="container" id="showloading"  >
+                
+                <div class="row text-center" style="margin-bottom:2.5rem">
+                    <div class="col-lg-12">
+                       Loading ... <br />
+                        Waiting for wallet address ...
+                    </div>
+                    </div>
+                    </div>
+
+            <div class="container" id="showjq" style="display:none">
+                
+                <div class="row" style="margin-bottom:2.5rem">
+                    <div class="col-lg-12">
+                        <h5>Wallet Address: </h5>
+                        <p class="mb-0"><span style=" overflow-wrap: break-word;" id="walletadd"></span></p>
+                  
+                        </div>  
+                        </div>  
+                
+                <div class="row" id="borderboxes">
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-wallet2 m-auto text-primary"></i></div>
+                            <h3>$BSC Balance:</h3>
+                            <p class="lead mb-0" id="totaltoken"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-gift m-auto text-primary"></i></div>
+                            <h3>BNB Rewards Paid:</h3>
+                            <p class="lead mb-0" id="totalrewards"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-stopwatch m-auto text-primary"></i></div>
+                            <h3>BNB Rewards Pending:</h3>
+                            <p class="lead mb-0" id="soonrewards">0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top:5rem">
+                    <div class="col-lg-12">
+                        <h4>Total BNB Rewards Paid to Everyone Since Launch:</h4>
+                        <p class="lead mb-0"><span id="AllRewards"></span></p>
+                  
+                        </div>  
+                        </div>   
+
+
+
+
+                   
+            </div>
+      
+            <div class="container">
+            <div class="row" style="margin-top:10rem">
+               
+                <div class="col-lg-12">
+                    
+                  
+                    <a class="btn btn-warning"   href="https://biggestshitcoin.com/">Back to Home</a>
+
+              
+                    </div>  
+                    </div>   
+                </div>
+               
+        </section>
+     
+        
+     
+
+     <!-- M was here! -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-min.js"></script>
+  
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script> 
+           <script src="js/code.js"></script>
+
+   
+    </body>
+</html>
